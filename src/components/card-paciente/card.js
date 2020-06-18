@@ -119,9 +119,6 @@ const Card = () => (
           </div>
         </div>
       </div>
-    </div>
-
-    <div className='row'>
       <div className='col-lg-4 mb-4'>
         <div className='card h-100'>
           <h6 className='card-header text-white bg-dark'>
@@ -238,9 +235,6 @@ const Card = () => (
           </div>
         </div>
       </div>
-    </div>
-
-    <div className='row'>
       <div className='col-lg-4 mb-4'>
         <div className='card h-100'>
           <h6 className='card-header text-white bg-dark'>

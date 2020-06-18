@@ -1,12 +1,13 @@
 import React from "react";
+import { useHistory, Link } from "react-router-dom";
 
 const Header = () => (
   <div>
     <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
       <div className='container'>
-        <a className='navbar-brand' href='/main'>
+        <Link className='navbar-brand' to='/home'>
           Suporte Covid
-        </a>
+        </Link>
         <button
           className='navbar-toggler'
           type='button'
@@ -21,9 +22,9 @@ const Header = () => (
         <div className='collapse navbar-collapse' id='navbarResponsive'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item active'>
-              <a className='nav-link' href='/main'>
+              <Link className='nav-link' to='/home'>
                 Inicio
-              </a>
+              </Link>
             </li>
             <li className='nav-item dropdown'>
               <a
@@ -36,38 +37,29 @@ const Header = () => (
                 Pacientes
               </a>
               <div className='dropdown-menu' aria-labelledby='navbarDropdown'>
-                <a className='dropdown-item' href='/cadastro_paciente '>
+                <Link className='dropdown-item' to='/cadastro_paciente'>
                   Novo
-                </a>
-                <a
-                  className='dropdown-item'
-                  href='/pacientes?token=<%= token %> '
-                >
+                </Link>
+                <Link className='dropdown-item' to='/pacientes'>
                   Listar
-                </a>
-                <a
-                  className='dropdown-item'
-                  href='/suspeitos?token=<%= token %> '
-                >
+                </Link>
+                <Link className='dropdown-item' to='/suspeitos'>
                   Suspeitos
-                </a>
-                <a
-                  className='dropdown-item'
-                  href='/quarentena?token=<%= token %> '
-                >
+                </Link>
+                <Link className='dropdown-item' to='/quarentena'>
                   Quarentena
-                </a>
+                </Link>
               </div>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='/usuarios'>
+              <Link className='nav-link' to='/usuarios'>
                 Usuários
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='/login'>
+              <Link className='nav-link' to='/login'>
                 Sair
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
