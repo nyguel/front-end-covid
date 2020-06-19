@@ -40,9 +40,8 @@ const Quarentena = () => {
                       data-nascimento='<%= paciente.nascimento %>'
                       data-fone='<%= paciente.telefone %>'
                       className='material-icons md-24 text-dark'
-                      href='#'
+                      href='/quarentena'
                       data-toggle='modal'
-                      href=''
                       data-target='#dadosPacienteModal'
                     >
                       list_alt

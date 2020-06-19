@@ -43,7 +43,6 @@ const NovoPaciente = () => {
                   id='pacienteNome'
                   required
                   className='form-control form-control-user'
-                  id='input_name'
                   placeholder='Digite aqui o nome'
                 />
               </div>
@@ -55,7 +54,6 @@ const NovoPaciente = () => {
                   name='endereco'
                   type='text'
                   className='form-control form-control-user'
-                  id='exampleInputEmail'
                   placeholder='Digite aqui o endereço'
                 />
               </div>

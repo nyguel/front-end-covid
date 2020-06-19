@@ -36,15 +36,17 @@ const Suspeitos = () => {
                       data-nascimento='<%= paciente.nascimento %>'
                       data-fone='<%= paciente.telefone %>'
                       className='material-icons md-24 text-dark'
-                      href='#'
+                      href='/dados'
                       data-toggle='modal'
-                      href=''
                       data-target='#dadosPacienteModal'
                     >
                       list_alt
                     </a>
 
-                    <a className='material-icons md-24 text-dark' href='#'>
+                    <a
+                      className='material-icons md-24 text-dark'
+                      href='/supeitos'
+                    >
                       person_remove
                     </a>
                   </td>

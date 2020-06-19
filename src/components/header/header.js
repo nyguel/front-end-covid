@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => (
   <div>
@@ -29,7 +29,7 @@ const Header = () => (
             <li className='nav-item dropdown'>
               <a
                 className='nav-link dropdown-toggle'
-                href='#'
+                href='/#'
                 id='navbarDropdown'
                 role='button'
                 data-toggle='dropdown'

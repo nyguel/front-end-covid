@@ -50,7 +50,7 @@ const Usuarios = () => {
                       data-nome='<%= usuario.nome%>'
                       data-privilegio='<%= usuario.privilegio%>'
                       data-target='#EditUsuarioModal'
-                      href=''
+                      href='/home'
                     >
                       edit
                     </a>
